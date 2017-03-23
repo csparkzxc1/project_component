@@ -54,6 +54,13 @@ $button-link-color: $link-link-color;
       text-decoration: underline;
     }
 
+  @each $name in $colors {
+    .is-#{$name} {
+      background-color: $name;
+
+    }
+  }
+
   &.is-la {
     border-radius: $radius-small;
     // font-size: $size-1;

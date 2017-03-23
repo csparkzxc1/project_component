@@ -102,3 +102,15 @@ $link-focus-color: $grey;
 
 $link-link-border: $grey-lo;
 $link-link-color: $grey;
+
+// list
+
+$colors: (
+primary: $primary,
+info: $blue,
+success: $success,
+danger: $red,
+warning: $pink,
+dark: $black-md,
+light: $white-md
+)
