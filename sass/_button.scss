@@ -55,23 +55,22 @@ $button-link-color: $link-link-color;
     }
 
   @each $name in $colors {
-    .is-#{$name} {
-      background-color: $name;
-
+    &.is-#{nth($name, 1)} {
+      background-color: nth($name, 2);
+      }
     }
-  }
 
   &.is-la {
     border-radius: $radius-small;
-    // font-size: $size-1;
+    font-size: $size-1;
   }
   &.is-md {
     border-radius: $radius-medium;
-    // font-size: $size-3;
+    font-size: $size-3;
   }
   &.is-sm {
     border-radius: $radius-small;
-    // font-size: $size-5;
+    font-size: $size-5;
   }
 
 }
