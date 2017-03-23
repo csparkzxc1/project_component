@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import "./variable.scss";
+
+$button-background-color: $white;
+$button-border: $grey-lo;
+$button-color: $grey-md;
+
+$button-hover-border: $link-hover-border;
+$button-hover-color: $link-hover-color;
+
+$button-active-border: $link-active-border;
+$button-active-color: $link-active-color;
+
+$button-focus-border: $link-focus-border;
+$button-focus-color: $link-focus-color;
+
+$button-link-border: $link-link-border;
+$button-link-color: $link-link-color;
+
+.button {
+  background-color: $button-background-color;
+  border: 1px solid $button-border;
+  color: $button-color;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  white-space: nowrap;
+
+  &.is-hover {
+      @extend .button;
+      border-color: $button-hover-border;
+      color: $button-hover-color;
+    }
+
+  &.is-active {
+      @extend .button;
+      border-color: $button-active-border;
+      color: $button-active-color;
+    }
+
+  &.is-focus {
+      @extend .button;
+      border-color: $button-focus-border;
+      color: $button-focus-color;
+      box-shadow: 0 0 0 rgba($button-focus-border, 0.3);
+    }
+
+  &.is-link {
+      @extend .button;
+      border-color: $button-link-border;
+      color: $button-link-color;
+      text-decoration: underline;
+    }
+
+  &.is-la {
+    border-radius: $radius-small;
+    // font-size: $size-1;
+  }
+  &.is-md {
+    border-radius: $radius-medium;
+    // font-size: $size-3;
+  }
+  &.is-sm {
+    border-radius: $radius-small;
+    // font-size: $size-5;
+  }
+
+}

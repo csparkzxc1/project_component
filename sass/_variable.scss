@@ -1,0 +1,104 @@
+//////////////////
+// Mango_trick //
+/////////////////
+
+
+// 1. Initial variables
+
+// colors
+
+$black: rgba(0, 0, 0, 1);
+$black-md: rgba(0, 0, 0, 0.8);
+$black-lo: rgba(0, 0, 0, 0.9);
+
+$grey:  rgba(55, 55, 55, 1);
+$grey-md:  rgb(100, 100, 100);
+$grey-lo: rgb(130, 130, 130);
+
+$white:  rgb(255, 255, 255);
+$white-md:  rgb(231, 231, 231);
+$white-lo:  rgb(222, 222, 222);
+
+$red: rgb(255, 0, 0);
+$orange:  rgb(217, 102, 20);
+$green:  rgb(39, 227, 40);
+$blue:  rgb(23, 70, 212);
+$pink:  rgb(241, 86, 113);
+$purple: rgb(166, 44, 249);
+
+// Typography
+// $font-family: ;
+
+// font size
+// $size-1: ;
+// $size-2: ;
+// $size-3: ;
+// $size-4: ;
+// $size-5: ;
+// $size-6: ;
+//
+// $weight-bold: ;
+// $weight-normal: ;
+// $weight-light: ;
+
+// radius
+$radius-large: 5px;
+$radius-medium: 3px;
+$radius-small: 2px;
+
+
+// // 2. primary color
+//
+// // primary 대표색상 (orange는 우리 대표색상인 망고 색깔로 변경예정)
+$primary: $orange;
+$info: $blue;
+$success: $green;
+$danger: $red;
+$warning: $pink;
+
+$dark: $black-md;
+$light: $white-md;
+
+//  3. Applied variables
+
+// Invert colors
+//  colorInvert 함수 짜기(예정)
+$red-invert: colorInvert($red);
+$orange-invert: colorInvert($orange);
+$green-invert: colorInvert($green);
+$blue-invert: colorInvert($blue);
+$pink-invert: colorInvert($pink);
+$purple-invert: colorInvert($purple);
+
+$primary-invert: colorInvert($orange);
+$info-invert: colorInvert($blue);
+$success-invert: colorInvert($green);
+$danger-invert: colorInvert($red);
+$warning-invert: colorInvert($pink);
+
+$dark-invert: colorInvert($black-md);
+$light-invert: colorInvert($white-md);
+
+// Text colors
+$text: $grey-md;
+$text-strong: $grey;
+$text-light: $grey-lo;
+$text-invert: colorInvert($grey-md);
+
+// Link colors
+$link: $primary;
+$link-invert: colorInvert(primary-invert);
+$link-visited: $purple;
+
+
+$link-hover-border: $grey-lo;
+$link-hover-color: $primary;
+
+$link-active-border: $grey-lo;
+$link-active-color: $grey;
+
+$link-focus-border: $grey-lo;
+$link-focus-color: $grey;
+
+$link-link-border: $grey-lo;
+$link-link-color: $grey;
