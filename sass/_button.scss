@@ -3,11 +3,11 @@
 @import "./variable.scss";
 
 $button-background-color: $white;
-$button-border: $grey-lo;
-$button-color: $grey-md;
+$button-border: $grey;
+$button-color: $grey;
 
-$button-hover-border: $link-hover-border;
-$button-hover-color: $link-hover-color;
+$button-hover-border: $hover-border;
+$button-hover-color: $hover-color;
 
 $button-active-border: $link-active-border;
 $button-active-color: $link-active-color;
@@ -29,42 +29,59 @@ $button-link-color: $link-link-color;
   padding-bottom: 0.45em;
   text-align: center;
   white-space: nowrap;
+  border-radius: $radius-medium;
 
-
-  &.is-hover {
-      @extend .button;
-      border-color: $button-hover-border;
-      color: $button-hover-color;
-    }
-
-  &.is-active {
-      @extend .button;
-      border-color: $button-active-border;
-      color: $button-active-color;
-    }
-
-  &.is-focus {
-      @extend .button;
-      border-color: $button-focus-border;
-      color: $button-focus-color;
-      box-shadow: 0 0 0 rgba($button-focus-border, 0.3);
-    }
-
-  &.is-link {
-      @extend .button;
-      border-color: $button-link-border;
-      color: $button-link-color;
-      text-decoration: underline;
-    }
-
-  @each $name in $colors {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    // $color-invert: nth($pair, 2);
     &.is-#{nth($name, 1)} {
-      background-color: nth($name, 2);
+      background-color: $color;
+      &:hover,
+      &.is-hovered {
+        @extend .button;
+        background-color: transparentize($color, 0.3);
+        border-color: $black;
+        // color: $color-invert;
+      }
+
+
+      &.is-outlined {
+        @extend .button;
+        background-color: $white;
+        border-color: $color;
+        color: $color;
+        &.hover {
+        background-color: $color;
+        border-color: $color;
+        // color: $color-invert;
+      };
+    };
+
+
+      &.is-active {
+          @extend .button;
+          border-color: $button-active-border;
+          color: $button-active-color;
+        }
+
+      &.is-focus {
+          @extend .button;
+          border-color: $button-focus-border;
+          color: $button-focus-color;
+          box-shadow: 0 0 0 rgba($button-focus-border, 0.3);
+        }
+
+      &.is-link {
+          @extend .button;
+          border-color: $button-link-border;
+          color: $button-link-color;
+          text-decoration: underline;
+        }
       }
     }
 
   &.is-la {
-    border-radius: $radius-small;
+    border-radius: $radius-large;
     font-size: $size-1;
   }
   &.is-md {
@@ -75,5 +92,4 @@ $button-link-color: $link-link-color;
     border-radius: $radius-small;
     font-size: $size-5;
   }
-
 }

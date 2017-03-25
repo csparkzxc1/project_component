@@ -94,6 +94,7 @@ $success-invert: colorInvert($green);
 $danger-invert: colorInvert($red);
 $warning-invert: colorInvert($pink);
 
+$black-invert: colorInvert($black);
 $dark-invert: colorInvert($black-md);
 $light-invert: colorInvert($white-md);
 
@@ -109,8 +110,8 @@ $link-invert: colorInvert(primary-invert);
 $link-visited: $purple;
 
 
-$link-hover-border: $grey-lo;
-$link-hover-color: $primary;
+$hover-border: $grey-lo;
+$hover-color: $primary;
 
 $link-active-border: $grey-lo;
 $link-active-color: $grey;
@@ -124,11 +125,12 @@ $link-link-color: $grey;
 // list
 
 $colors: (
-primary: $primary,
-info: $blue,
-success: $success,
-danger: $red,
-warning: $pink,
-dark: $black-md,
-light: $white-md
-)
+primary: ($primary, $primary-invert),
+info: ($blue, $info-invert),
+success: ($success, $success-invert),
+danger: ($red, $danger-invert),
+warning: ($pink, $warning-invert),
+dark: ($black-md, $dark-invert),
+black: ($black, $black-invert),
+light: ($white-md, $light-invert)
+);
