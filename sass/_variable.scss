@@ -1,7 +1,25 @@
 //////////////////
 // Mango_trick //
 /////////////////
-
+// 빨간색 - #ff7978
+//
+// [11:40]
+// 노랑색- #f2ca68
+//
+// [11:41]
+// 녹색- #5cd18b
+//
+// [11:41]
+// 파란색- #58a2ed
+//
+// [11:41]
+// 하늘색? - #65d3e4
+//
+// [11:41]
+// 진회색 - #7c8a97
+//
+// [11:42]
+// 회색 - #d2d6d9
 
 // 1. Initial variables
 
@@ -19,12 +37,12 @@ $white:  rgb(255, 255, 255);
 $white-md:  rgb(231, 231, 231);
 $white-lo:  rgb(222, 222, 222);
 
-$red: rgb(255, 0, 0);
-$orange:  rgb(217, 102, 20);
-$green:  rgb(39, 227, 40);
-$blue:  rgb(23, 70, 212);
-$pink:  rgb(241, 86, 113);
-$purple: rgb(166, 44, 249);
+$red: rgb(255, 120, 121);
+$orange:  rgb(242, 202, 104);
+$green:  rgb(92, 209, 139);
+$blue:  rgb(88, 162, 237);
+$pink:  rgb(101, 211, 228);
+$purple: rgb(0, 0, 0);
 
 // Typography
 // $font-family: ;
@@ -35,7 +53,7 @@ $size-2: 25px;
 $size-3: 20px;
 $size-4: 17px;
 $size-5: 14px;
-$size-6: 10px;
+$size-6: 14px;
 //
 // $weight-bold: ;
 // $weight-normal: ;
@@ -68,7 +86,7 @@ $orange-invert: colorInvert($orange);
 $green-invert: colorInvert($green);
 $blue-invert: colorInvert($blue);
 $pink-invert: colorInvert($pink);
-$purple-invert: colorInvert($purple);
+// $purple-invert: colorInvert($purple);
 
 $primary-invert: colorInvert($orange);
 $info-invert: colorInvert($blue);

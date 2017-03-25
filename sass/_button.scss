@@ -25,8 +25,11 @@ $button-link-color: $link-link-color;
   cursor: pointer;
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
   text-align: center;
   white-space: nowrap;
+
 
   &.is-hover {
       @extend .button;
