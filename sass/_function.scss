@@ -1,3 +1,14 @@
 @function colorInver($color) {
   @return returnValue;
 }
+
+
+// @function textInvert($color) {
+//   $color-rgb: ('red': red($color),'green': green($color),'blue': blue($color));
+//   // @each $name, $value in $color-rgb
+//   @if ('red' + 'green' +'blue' < 200) {
+//   @return $white-md;
+//   } else {
+//   @return $grey-md;
+//   }
+// }

@@ -47,12 +47,13 @@ $button-link-color: $link-link-color;
 
       &.is-outlined {
         @extend .button;
-        background-color: $white;
+        background-color: transparent;
         border-color: $color;
         color: $color;
-        &.hover {
+        &:hover {
         background-color: $color;
         border-color: $color;
+        color: $white;
         // color: $color-invert;
       };
     };

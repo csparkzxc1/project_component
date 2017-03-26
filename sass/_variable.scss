@@ -29,7 +29,7 @@ $black: rgba(0, 0, 0, 1);
 $black-md: rgba(0, 0, 0, 0.8);
 $black-lo: rgba(0, 0, 0, 0.9);
 
-$grey:  rgba(55, 55, 55, 1);
+$grey:  rgb(55, 55, 55);
 $grey-md:  rgb(100, 100, 100);
 $grey-lo: rgb(130, 130, 130);
 
@@ -97,6 +97,7 @@ $warning-invert: colorInvert($pink);
 $black-invert: colorInvert($black);
 $dark-invert: colorInvert($black-md);
 $light-invert: colorInvert($white-md);
+
 
 // Text colors
 $text: $grey-md;
