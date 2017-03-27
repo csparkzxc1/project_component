@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import "./variable.scss";
+////////////
+// input //
+///////////
+
+$input-background: $white;
+$input-hover-border: $primary;
+$input-border: $black-lo;
+
+
+
+
+.input {
+  box-shadow: 1px 1px 2px rgba(52, 52, 47, 0.33);
+  background-color: $input-background;
+  border: 1px solid $input-border;
+  border-radius: $radius-small;
+
+  display: block;
+  line-height: 1.2;
+  padding: 0.5em;
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    &.is-#{$name} {
+      border-color: $color;
+    }
+  }
+  &:hover,
+  &.is-hover {
+    // border-color: $input-hover-border;
+  }
+  &:active,
+  &.is-active {
+    border-color: none;
+    // color:
+  }
+  &:disabled,
+  &.is-disable {
+    background-color: $grey;
+  }
+
+  &.is-la {
+    font-size: $size-1;
+  }
+  &.is-md {
+    font-size: $size-3;
+  }
+  &.is-sm {
+    font-size: $size-5;
+  }
+
+  &.is-disable {
+    pointer-events: none;
+    opacity: 0.4;
+    box-shadow: none;
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+    display: flex;
+  }
+
+
+
+
+
+}
