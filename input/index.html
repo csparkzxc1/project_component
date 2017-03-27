@@ -9,17 +9,17 @@
   <style>
 
     .container {
-      /*display: flex;
-      flex-flow: column;*/
+      /*flex-flow: column;*/
       border: 1px solid black;
     }
     .column {
+      display: flex;
       /*display: block;*/
     }
     .field {
-      display: block;
+      /*display: block;*/
       margin: 1.5rem 2rem;
-      flex-direction: row;
+      /*flex-direction: row;*/
     }
     .input {
       margin: 2px;
@@ -34,13 +34,12 @@
   <div class="container">
     <div class="column">
       <div class="field">
-        <input class="input is-primary"type="text" placeholder="primary input">
-        <input class="input is-info"type="text" placeholder="info input">
-        <input class="input is-success"type="text" placeholder="success input">
-        <input class="input is-warning"type="text" placeholder="warning input">
-        <input class="input is-danger"type="text" placeholder="danger input">
+        <input class="input is-primary" type="text" placeholder="primary input">
+        <input class="input is-info" type="text" placeholder="info input">
+        <input class="input is-success" type="text" placeholder="success input">
+        <input class="input is-warning" type="text" placeholder="warning input">
+        <input class="input is-danger" type="text" placeholder="danger input">
       </div>
-
       <div class="field">
         <xmp>
           <input class="input is-primary"type="text" placeholder="primary input">
@@ -53,40 +52,61 @@
     </div>
   <hr>
 
-      <div class="colum">
-        <div class="field">
+    <div class="colum">
+      <div class="field">
+        <input class="input is-primary is-disable" type="text" placeholder="primary input">
+        <input class="input is-info is-disable" type="text" placeholder="info input">
+        <input class="input is-success is-disable "type="text" placeholder="success input">
+        <input class="input is-warning is-disable "type="text" placeholder="warning input">
+        <input class="input is-danger is-disable "type="text" placeholder="danger input">
+      </div>
+      <div class="field">
+        <xmp>
           <input class="input is-primary is-disable" type="text" placeholder="primary input">
           <input class="input is-info is-disable" type="text" placeholder="info input">
           <input class="input is-success is-disable "type="text" placeholder="success input">
           <input class="input is-warning is-disable "type="text" placeholder="warning input">
           <input class="input is-danger is-disable "type="text" placeholder="danger input">
-        </div>
-
-        <div class="field">
-          <xmp>
-            <input class="input is-primary is-disable" type="text" placeholder="primary input">
-            <input class="input is-info is-disable" type="text" placeholder="info input">
-            <input class="input is-success is-disable "type="text" placeholder="success input">
-            <input class="input is-warning is-disable "type="text" placeholder="warning input">
-            <input class="input is-danger is-disable "type="text" placeholder="danger input">
-          </xmp>
-        </div>
+        </xmp>
       </div>
+    </div>
   <hr>
 
-  <div class="column">
-    <div class="field">
-      <input class="input is-la"type="text" placeholder="large input">
-      <input class="input is-md"type="text" placeholder="medium input">
-      <input class="input is-sm"type="text" placeholder="small input">
-    </div>
-
-    <div class="field">
-      <xmp>
+    <div class="column">
+      <div class="field">
         <input class="input is-la"type="text" placeholder="large input">
         <input class="input is-md"type="text" placeholder="medium input">
         <input class="input is-sm"type="text" placeholder="small input">
-      </xmp>
+      </div>
+      <div class="field">
+        <xmp>
+          <input class="input is-la"type="text" placeholder="large input">
+          <input class="input is-md"type="text" placeholder="medium input">
+          <input class="input is-sm"type="text" placeholder="small input">
+        </xmp>
+      </div>
+    </div>
+  <hr>
+
+
+
+  <div class="column">
+    <div class="field">
+
+  <fieldset>
+    <legend>Search_Bar</legend>
+      <input type="text" class="input"  placeholder="Search_Bar">
+      <a class="button"><span>Button</span></a>
+  </fieldset>
+
+
+
+  <fieldset>
+    <legend>Email subscribe form</legend>
+    <input type="email" class="subscribe-email" placeholder="Input Field Text" aria-label="email address">
+    <button type="submit" class="subscribe-btn"><span>BUTTON</span></button>
+  </fieldset>
+
     </div>
   </div>
 </div>

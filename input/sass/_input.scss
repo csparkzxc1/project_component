@@ -17,7 +17,7 @@ $input-border: $black-lo;
   border: 1px solid $input-border;
   border-radius: $radius-small;
 
-  display: block;
+  // display: block;
   line-height: 1.2;
   padding: 0.5em;
   @each $name, $pair in $colors {
