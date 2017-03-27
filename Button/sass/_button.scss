@@ -58,6 +58,25 @@ $button-link-color: $link-link-color;
       };
     };
 
+      &.is-inverted {
+        transition: all 0.5s ease-in-out;
+        background-color: $white;
+        color: $white;
+        border: $white;
+        &:hover {
+          background-color: $color;
+          border-color: $color;
+          color: $white;
+        }
+      }
+
+      &.is-textInverted {
+          background-color: $white;
+        &:hover {
+          color: $color;
+        }
+      }
+
       &:active,
       &.is-active {
         @extend .button;
