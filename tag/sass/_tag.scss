@@ -5,7 +5,7 @@
 
 .tag {
   background-color: $white;
-  border-radius: $radius-medium;
+  border-radius: $radius-large;
   color: $text;
 
   display: inline-flex;
@@ -30,12 +30,12 @@
     }
   &.is-md {
     font-size: $size-3;
-    border-radius: $radius-medium;
+    border-radius: $radius-large;
 
   }
   &.is-sm {
     font-size: $size-5;
-    border-radius: $radius-small;
+    border-radius: $radius-large;
   }
 
 
