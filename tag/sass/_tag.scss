@@ -1,4 +1,6 @@
+@charset "UTF-8";
 
+@import "../../utilities/_variable.scss";
 //////////////////////
 //  Mango_trick_Tag //
 /////////////////////
@@ -24,17 +26,21 @@
       background-color: $color;
       color: $text;
       opacity: 0.8;
+      &:hover {
+        @extend .tag;
+        opacity: 0.2;
+      }
   &.is-la {
-    font-size: $size-1;
+    font-size: $size-2;
     border-radius: $radius-large;
     }
   &.is-md {
-    font-size: $size-3;
+    font-size: $size-4;
     border-radius: $radius-large;
 
   }
   &.is-sm {
-    font-size: $size-5;
+    font-size: $size-6;
     border-radius: $radius-large;
   }
 

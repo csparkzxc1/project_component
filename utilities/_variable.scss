@@ -44,16 +44,25 @@ $blue:  rgb(88, 162, 237);
 $pink:  rgb(101, 211, 228);
 $purple: rgb(0, 0, 0);
 
+// sns colors
+
+$facebook: rgb(59,89, 152);
+$google: rgb(234, 67, 53);
+$twitter: rgb(51, 204, 255);
+
+
 // Typography
 // $font-family: ;
 
 // font size
-$size-1: 30px;
-$size-2: 25px;
-$size-3: 20px;
-$size-4: 17px;
-$size-5: 14px;
-$size-6: 14px;
+$base-font-size: 16px;
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.6rem;
+$size-5: 1rem;
+$size-6: 0.75rem;
+
 //
 // $weight-bold: ;
 // $weight-normal: ;
@@ -111,16 +120,16 @@ $link-invert: colorInvert(primary-invert);
 $link-visited: $purple;
 
 
-$hover-border: $grey-lo;
+$hover-border: $white;
 $hover-color: $primary;
 
-$link-active-border: $grey-lo;
+$link-active-border: $white;
 $link-active-color: $grey;
 
-$link-focus-border: $grey-lo;
+$link-focus-border: $white;
 $link-focus-color: $grey;
 
-$link-link-border: $grey-lo;
+$link-link-border: $white;
 $link-link-color: $grey;
 
 // list
