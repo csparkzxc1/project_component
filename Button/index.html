@@ -4,39 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/component.css">
-  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
   <title>Mango_trick_Button</title>
-  <style>
-    body {
-      margin: 4rem;
-      font-size: 16px;
-      }
-    * {box-sizing: border-box;}
-    .container {
-      display: flex;
-      flex-flow: column;
-      border: 2px solid black;
-      padding: 2rem;
-      }
-    .block {
-      white-space: nowrap;
-      margin: 1.5rem 2rem;
-      width: inherit;
-    }
-    h1 {
-      text-align: center;
-      text-shadow: 5px 1px 1px rgb(242, 202, 104);
-    }
-    xmp {
-      background-color: rgb(252, 243, 124);
-      border: 5px solid rgba(201, 180, 34, 0.64)
-    }
-    hr {
-      width:90%;
-      height: 2px;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/component.css">
+  <link rel="stylesheet" href="../utilities/style.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
 
@@ -329,11 +300,12 @@
         <h2>FontAwesome SNS</h2>
         <div class="block">
           <a class="button fa fa-facebook"></a>
-          <a class="button is-primary fa fa-twitter"></a>
-          <a class="button is-info fa fa-facebook"></a>
-          <a class="button is-success fa fa-google"></a>
-          <a class="button is-warning fa fa-google-plus"></a>
-          <a class="button is-danger fa fa-envelope"></a>
+          <a class="button twitter fa fa-twitter"></a>
+          <a class="button facebook fa fa-facebook"></a>
+          <a class="button google fa fa-google"></a>
+          <a class="button google fa fa-google-plus"></a>
+          <a class="button naver">N</a>
+          <a class="button fa fa-envelope"></a>
         </div>
         <div class="block">
           <xmp>
@@ -342,6 +314,7 @@
             <a class="button facebook fa fa-facebook"></a>
             <a class="button google fa fa-google"></a>
             <a class="button is-warning fa fa-google-plus"></a>
+            <a class="button naver">N</a>
             <a class="button is-danger fa fa-envelope"></a>
           </xmp>
         </div>
@@ -350,6 +323,7 @@
           <a class="button twitter fa fa-twitter-square"> CONTINUE</a>
           <a class="button facebook fa fa-facebook-square"> CONTINUE</a>
           <a class="button google fa fa-google-plus-square"> CONTINUE</a>
+          <a class="button naver">N CONTINUE</a>
           <a class="button fa fa-envelope"> SIGN UP WITH EMAIL</a>
         </div>
 
@@ -358,6 +332,7 @@
             <a class="button twitter fa fa-twitter-square"> CONTINUE</a>
             <a class="button facebook fa fa-facebook-square"> CONTINUE</a>
             <a class="button google fa fa-google-plus-square"> CONTINUE</a>
+            <a class="button naver">N CONTINUE</a>
             <a class="button fa fa-envelope"> SIGN UP WITH EMAIL</a>
           </xmp>
         </div>
@@ -369,6 +344,17 @@
       <div class="column">
         <h2>Dropdowns</h2>
         <div class="block">
+
+          <div class="dropdown">
+            <button type="button" name="button">menu</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="">1</a>
+              <a class="dropdown-item" href="">2</a>
+              <a class="dropdown-item" href="">3</a>
+              <a class="dropdown-item" href="">4</a>
+            </div>
+          </div>
+
           <a class="button fa fa-angle-down"> Menu</a>
           <a class="button is-primary fa fa-angle-down"> Menu</a>
           <a class="button is-info fa fa-angle-down"> Menu</a>
@@ -473,6 +459,32 @@
           </div>
         </div>
     </div>
+
+  <div class="field">
+   <p class="control">
+     <span class="select is-large">
+       <select>
+         <option>Select dropdown</option>
+         <option>With options</option>
+       </select>
+     </span>
+   </p>
+ </div>
+
+
+
+ <div class="field">
+   <div class="section">
+     <a href="">Korea</a>
+     <!-- <span class="select"> -->
+     <select class="dropdown-menu" name="korea">
+       <a class="dropdown-item" href="">Seoul</a>
+       <a class="dropdown-item" href="">Busan</a>
+     </select>
+      <!-- </span> -->
+    </div>
+  </div>
+
 
 </body>
 </html>

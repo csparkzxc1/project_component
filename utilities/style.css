@@ -1,0 +1,28 @@
+  body {
+    margin: 4rem;
+    font-size: 16px;
+    }
+  * {box-sizing: border-box;}
+  .container {
+    display: flex;
+    flex-flow: column;
+    border: 2px solid black;
+    padding: 2rem;
+    }
+  .block {
+    white-space: nowrap;
+    margin: 1.5rem 2rem;
+    width: inherit;
+  }
+  h1 {
+    text-align: center;
+    text-shadow: 5px 1px 1px rgb(242, 202, 104);
+  }
+  xmp {
+    background-color: rgb(252, 243, 124);
+    border: 5px solid rgba(201, 180, 34, 0.64)
+  }
+  hr {
+    width:90%;
+    height: 2px;
+  }

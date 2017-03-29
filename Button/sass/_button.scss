@@ -131,6 +131,12 @@ $button-link-color: $link-link-color;
         color: $white;
         border: none;
       }
+
+      &.naver {
+        background-color: $naver;
+        color: $white;
+        border: none;
+      }
     }
 
 

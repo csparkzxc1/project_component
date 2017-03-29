@@ -28,7 +28,7 @@
       opacity: 0.8;
       &:hover {
         @extend .tag;
-        opacity: 0.2;
+        opacity: 0.5;
       }
   &.is-la {
     font-size: $size-2;

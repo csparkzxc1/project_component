@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import "../../utilities/_variable.scss";
+
+$dropdown-menu-background-color: $primary;
+$dropdown-menu-border: $grey;
+$dropdown-menu-color: $white;
+
+$dropdown-item-bg: $grey-lo;
+$dropdown-item-hover-bg: $grey-md;
+$dropdown-item-active-bg: $grey;
+
+.dropdown {
+  position: relative;
+  background-color: $dropdown-menu-background-color;
+  border: 1px solid $dropdown-menu-border;
+  color: $dropdown-menu-color;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $radius-medium;
+  &.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    font-size: $base-font-size;
+  }
+}
+&:active {
+  .dropdown-menu {
+    // display: block;
+  }
+}
+
+.dropdown-item {
+  display: none;
+  width: 100%;
+  left: 0;
+  clear: both;
+  white-space: nowrap;
+  &:hover {
+    background-color: $dropdown-item-hover-bg;
+  }
+
+  &:active {
+    background-color: $dropdown-item-active-bg;
+  }
+}
