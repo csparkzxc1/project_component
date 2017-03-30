@@ -30,6 +30,7 @@ $button-link-color: $link-link-color;
   text-align: center;
   white-space: nowrap;
   border-radius: $radius-medium;
+  position: relative;
 
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
