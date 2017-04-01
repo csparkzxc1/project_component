@@ -135,12 +135,12 @@ $link-link-color: $grey;
 // list
 
 $colors: (
-primary: ($primary, $primary-invert),
-info: ($blue, $info-invert),
-success: ($success, $success-invert),
-danger: ($red, $danger-invert),
-warning: ($pink, $warning-invert),
-dark: ($black-md, $dark-invert),
-black: ($black, $black-invert),
-light: ($white-md, $light-invert)
+primary: ($primary),
+info: ($blue),
+success: ($success),
+danger: ($red),
+warning: ($pink),
+dark: ($black-md),
+black: ($black),
+light: ($white-md)
 );

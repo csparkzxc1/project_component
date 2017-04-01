@@ -1,0 +1,22 @@
+// @mixin link-btn(
+//   $button-background-color,
+//   $button-text-color) {
+//     @if $hover {
+//       &:hover { background-color: transparentize($color, 0.3);
+//       }
+//     }
+// }
+
+
+@mixin hover-btn($name, $num) {
+   
+    background-color: transparentize($name, $num);
+
+}
+
+@mixin inverted-btn ($button-background-color, $button-text-color){
+  &:hover {
+    background-color: $button-background-color;
+    color: $button-text-color;
+  }
+}
